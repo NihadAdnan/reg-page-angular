@@ -1,0 +1,27 @@
+<!-- Navbar -->
+<app-navbar></app-navbar>
+<!-- Body -->
+<div class="bg-white p-10 border border-gray-300 rounded mb-5 text-[#000]">
+    <h3 class="text-center mt-0 mb-10 text-2xl font-semibold">Employer Registration Form</h3>
+  <form action="">
+    <!-- Account Information -->
+    <section>
+    <h3 class="text-[#337ab7] mt-0 mb-7 text-xl font-semibold">Account Information</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- username -->
+    <app-input-field label="Username" name="txtUserName" id="txtUserName" placeholder="Type Username" [value]="''"[maxLength]="20" errorMessage="Username is required"></app-input-field>
+    <!-- password -->
+    <app-input-field label="Password" name="txtPassword" id="txtPassword" placeholder="Use maximum 8 characters"
+    [value]="''" [maxLength]="8" errorMessage="Password is required"></app-input-field>
+    <!-- confirm password -->
+    <app-input-field label="Confirm Password" name="txtConfirmPassword" id="txtConfirmPassword"
+    placeholder="Retype password" [value]="''"
+    [maxLength]="8" errorMessage="Password is required"></app-input-field></div>
+    </section>
+    <hr>
+    <!-- Company Details Information -->
+    <section></section>
+    <hr>
+  </form>
+ </div>
+<!-- Footer -->
