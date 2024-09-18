@@ -15,4 +15,8 @@ export class InputFieldComponent {
   @Input() value: string = '';
   @Input() errorMessage: string = '';
   @Input() maxLength: number = 20;
+  @Input() isRequired: boolean = true;
 }
+
+
+
