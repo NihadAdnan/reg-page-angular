@@ -21,7 +21,7 @@
 
 <!-- Industrys wrap -->
 <div class="max-h-[225px] overflow-y-scroll w-full border-2 border-[#e4e4e4] rounded-md p-2.5 mb-2.5 mt-6">
-    <div class="flex gap-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         @for (item of getTypes(); track item) {
             <div class="flex items-center">
                 <input name="industry_type" id="industry_type_{{item.value}}" type="checkbox" value="{{item.value}}" class="form-checkbox h-5 w-5 text-blue-600 cursor-pointer">
@@ -29,6 +29,7 @@
                     {{ item.label }}
                 </label>
              </div>
+             
         }
+        </div>
     </div>
-</div>
